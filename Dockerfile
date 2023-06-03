@@ -22,6 +22,9 @@ RUN apt-get update && apt-get install -y fish
 # pythonパッケージ管理ツールを更新
 RUN pip3 install --upgrade pip setuptools wheel
 
+# TypeScriptをインストール
+RUN npm install -g typescript
+
 # 環境変数を設定
 ENV GOPATH=/workspace/go
 ENV PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
