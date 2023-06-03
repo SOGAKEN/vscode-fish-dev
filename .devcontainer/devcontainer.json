@@ -1,0 +1,25 @@
+{
+    "name": "Python Project",
+    "context": "..",
+    "dockerFile": "../Dockerfile",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "/bin/bash"
+                    }
+                },
+                "terminal.integrated.defaultProfile.linux": null,
+                "git.path": "/usr/bin/git"
+            },
+            "extensions": [
+                "ms-python.python",
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "ms-azuretools.vscode-docker"
+            ],
+            "postCreateCommand": "echo 'Development environment is ready!'"
+        }
+    }
+}
