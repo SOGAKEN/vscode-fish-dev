@@ -22,7 +22,8 @@
                 "dbaeumer.vscode-eslint",
                 "ms-azuretools.vscode-docker",
                 "golang.go",
-                "ms-vscode.vscode-typescript-tslint-plugin"
+                "ms-vscode.vscode-typescript-tslint-plugin",
+                "felixfbecker.php-intellisense"
             ],
             "postCreateCommand": "echo 'Development environment is ready!'"
         }

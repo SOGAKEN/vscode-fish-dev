@@ -25,6 +25,12 @@ RUN pip3 install --upgrade pip setuptools wheel
 # TypeScriptをインストール
 RUN npm install -g typescript
 
+# PostgreSQLをインストール
+RUN apt-get update && apt-get install -y postgresql postgresql-contrib
+
+# PHPをインストール
+RUN apt-get update && apt-get install -y php php-pgsql
+
 # 環境変数を設定
 ENV GOPATH=/workspace/go
 ENV PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
