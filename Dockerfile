@@ -16,6 +16,9 @@ RUN npm install npm@latest -g
 # gitをインストール
 RUN apt-get install -y git
 
+# Fish shellをインストールするためのステップ
+RUN apt-get update && apt-get install -y fish
+
 # pythonパッケージ管理ツールを更新
 RUN pip3 install --upgrade pip setuptools wheel
 
@@ -23,5 +26,5 @@ RUN pip3 install --upgrade pip setuptools wheel
 ENV GOPATH=/workspace/go
 ENV PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
-# コンテナ起動時にbashシェルを開始
-CMD [ "/bin/bash" ]
+# コンテナ起動時にfishシェルを開始
+CMD [ "fish" ]

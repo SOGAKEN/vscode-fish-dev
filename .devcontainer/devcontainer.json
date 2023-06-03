@@ -6,11 +6,14 @@
         "vscode": {
             "settings": {
                 "terminal.integrated.profiles.linux": {
-                    "bash": {
-                        "path": "/bin/bash"
+                    // "bash": {
+                    //     "path": "/bin/bash"
+                    // },
+                    "fish": {
+                        "path": "/usr/bin/fish"
                     }
                 },
-                "terminal.integrated.defaultProfile.linux": null,
+                "terminal.integrated.defaultProfile.linux": "fish",
                 "git.path": "/usr/bin/git"
             },
             "extensions": [
