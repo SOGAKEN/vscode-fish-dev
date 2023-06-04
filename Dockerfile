@@ -36,4 +36,6 @@ ENV GOPATH=/workspace/go
 ENV PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # コンテナ起動時にfishシェルを開始
-CMD [ "fish" ]
+# CMD [ "fish" ]
+CMD ["fish", "-c", "source ~/.config/fish/config.fish; fish"]
+
